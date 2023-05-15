@@ -1,0 +1,155 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;  
+  background-color: #2B273F;
+}
+
+
+.normal {
+  height: auto;
+  width: auto;
+  border: 1px solid black;
+  color: black;
+  margin : 3px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+
+}
+
+.normal:hover {
+  background-color: lightslategray;
+}
+
+.question {
+  font-size: 18px;
+  height: auto;
+  width: auto;
+  border: 1px solid black;
+  color: black; 
+  margin-top: 15px;
+  margin-bottom: 5px;
+  overflow: auto;
+  padding: 5px;
+  white-space: normal;
+border-radius: 5px;
+background-color: #999;
+color: black;
+
+}
+
+
+
+
+
+.titleHolder {
+  width: 412px;
+  height: 41px;
+  top: 218px;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 31.25px;
+  line-height: 37px;
+  text-align: center;
+  color: whitesmoke
+}
+
+
+.description{
+  width: auto;
+  height: 19px;
+  
+  top: 266px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: whitesmoke
+}
+
+.startButtonHolder {
+  width: 193px;
+  height: 52px;
+  top: 314px;
+  background: #4D5B9E;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 15px;
+  margin : 15px;
+}
+
+
+.startTextHolder {
+  width: 193px;
+  height: 39.58px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 39px;
+  text-align: center;
+  color: white;
+}
+
+.submit {
+  padding: 8px 18px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  background-color: silver;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  margin : 15px;
+}
+
+.submit:hover {
+  background-color: darkslateblue;
+}
+
+.submit:focus {
+  outline: none;
+}
+
+
+
+.score {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-top: 58px;
+  color: #fff;
+  position: absolute;
+  left: 40%;
+}
+
+
+
+.restart {
+  width: 100px;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: #999;
+  color: #fff;
+  border: none;
+  position: absolute;
+  right: 15px;
+}
+
+
+.scoreandrestart {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
