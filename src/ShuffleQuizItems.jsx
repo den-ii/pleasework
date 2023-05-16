@@ -2,13 +2,13 @@ import { useState, useEffect } from "react";
 import FetchData from "./FetchData";
 import PropTypes from "prop-types";
 
-// function shuffleArray(array) {
-//   for (let i = array.length - 1; i > 0; i--) {
-//     const j = Math.floor(Math.random() * (i + 1));
-//     [array[i], array[j]] = [array[j], array[i]];
-//   }
-//   return array;
-// }
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
 
 export default function ShuffleQuizItems(props) {
   const [itemsToShuffle, setItemsToShuffle] = useState([]);
@@ -35,7 +35,7 @@ export default function ShuffleQuizItems(props) {
       };
     });
     props.setItemsToExport(shuffledItems);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [itemsToShuffle]);
 
   return (

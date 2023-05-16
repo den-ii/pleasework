@@ -8,7 +8,7 @@ export default function QuizPage(props) {
   const [isButtonDisabled, setButtonDisabled] = useState(false);
 
   function reStart() {
-    // window.location.reload();
+    window.location.reload();
   }
 
   function handleItemsToExport(items) {
