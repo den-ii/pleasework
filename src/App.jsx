@@ -14,8 +14,8 @@ function App() {
   return (
     <>
       <div>
-        <TitlePage clickIt={clickIt} display={display} />
-        <QuizPage clickIt={clickIt} display={display} />
+        <TitlePage clickIt={() => clickIt} display={display} />
+        <QuizPage clickIt={() => clickIt} display={display} />
       </div>
     </>
   );

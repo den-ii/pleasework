@@ -35,6 +35,7 @@ export default function ShuffleQuizItems(props) {
       };
     });
     props.setItemsToExport(shuffledItems);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [itemsToShuffle]);
 
   return (
